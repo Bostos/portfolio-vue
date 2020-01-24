@@ -3,3 +3,9 @@ https://medium.com/@dinyangetoh/how-to-build-simple-restful-api-with-nodejs-expr
 
 Connect node & express to vue:
 https://www.techiediaries.com/vue-js-express-tutorial/
+
+Exporting db collection from MongoDB:
+mongoexport --db=test --collection=traffic --out=C:\Temp\traffic.json
+
+Vueper Slides component for Vue.js:
+https://antoniandre.github.io/vueper-slides/?ref=madewithvuejs.com

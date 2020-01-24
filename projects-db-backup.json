@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "message": "Projects retrieved successfully",
+  "data": [
+    {
+      "_id": "5e29a38033dd732adcc71848",
+      "create_date": "2020-01-23T13:45:36.659Z",
+      "title": "Test Project",
+      "description": "This is the test project description",
+      "image": "test-image.jpg",
+      "__v": 0
+    },
+    {
+      "_id": "5e2ada615eef8e23483dc81c",
+      "create_date": "2020-01-24T11:52:01.169Z",
+      "title": "New project",
+      "description": "New project description",
+      "image": "test-image-2.jpg",
+      "__v": 0
+    },
+    {
+      "_id": "5e2adb1e5eef8e23483dc81d",
+      "create_date": "2020-01-24T11:55:10.914Z",
+      "title": "Third project",
+      "description": "Third project description",
+      "image": "test-image-3.jpg",
+      "__v": 0
+    },
+    {
+      "_id": "5e2adb5b5eef8e23483dc81e",
+      "create_date": "2020-01-24T11:56:11.743Z",
+      "title": "Fourth project",
+      "description": "Fourth project description",
+      "image": "test-image-4.jpg",
+      "__v": 0
+    }
+  ]
+}
