@@ -370,6 +370,52 @@
       height: auto;
     }
 
+    /* Portfolio page */
+    #portfolio{
+      display: flex;
+      justify-content: center;
+    }
+
+    #portfolio-title-block h1{
+      color: white;
+      font-size: 3em;
+      margin-left: 40vw;
+      position: absolute;
+      top: 5vw;
+    }
+
+    #portfolio-box{
+      /*background-color: rgba(69, 156, 117, 0.6);*/
+      display: flex;
+      width: 100%;
+      height: 40vh;
+      margin-top: 30vh;
+      padding: 0 7%;
+    }
+
+    #portfolio-box a{
+      color: white;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+
+    .slider{
+      width: 100%;
+      color: white;
+    }
+
+    .vueperslides__arrows--outside .vueperslides__arrow--prev{
+      left: -5.5em;
+    }
+
+    .vueperslides__arrows--outside .vueperslides__arrow--next{
+      right: -5.5em !important;
+    }
+
+    .vueperslide__title:hover{
+      color: #459c75;
+    }
+
   }
 
   @media only screen and (max-width: 849px) {
