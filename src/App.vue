@@ -405,7 +405,7 @@
     }
 
     .vueperslides__arrows--outside .vueperslides__arrow--prev{
-      left: -5.5em;
+      left: -5.5em !important;
     }
 
     .vueperslides__arrows--outside .vueperslides__arrow--next{
