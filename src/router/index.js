@@ -24,11 +24,17 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: () => import('../views/Contact.vue')
+  },
+  {
+    path: '/portfolio/:id',
+    name: 'project',
+    component: () => import('../views/Project.vue')
   }
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 export default router

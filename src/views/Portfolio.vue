@@ -23,7 +23,7 @@
                       :slide-ratio="1 / 4.15"
                       :dragging-distance="200"
                       :breakpoints="{ 800: { visibleSlides: 1, slideMultiple: 2, slideRatio:1/1.5, bullets:1 } }">
-                      <vueper-slide v-for="project in projects" :key="project._id" :title="project.title" :link="'/portfolio/'+project.title" :image="require('@/assets/img/projects/'+project.image)"/>
+                      <vueper-slide v-for="project in projects" :key="project._id" :title="project.title" :link="'/portfolio/'+project._id" :image="require('@/assets/img/projects/'+project.image)"/>
                     </vueper-slides>
                 </div>
 
