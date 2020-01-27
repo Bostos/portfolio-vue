@@ -22,7 +22,9 @@
   	    </div>
   	    <div class="columnflex">
   	    	<div id="about-right">
-
+            <div id="about-text">
+              <p>ABOUT ME</p>
+            </div>
   	    	</div>
   	    </div>
   	</div>
@@ -36,3 +38,95 @@
     })
   }
 </script>
+
+<style scoped>
+  /* Media Queries - For screens wider than 850px (Desktop version) */
+  @media only screen and (min-width: 850px) {
+
+    #text{
+      margin-top: 25%;
+      margin-left: 15%;
+    }
+
+    #text p {
+      font-size: 1.2em;
+    }
+
+    #about-right{
+      background-color: rgba(69, 156, 117, 0.6);
+      display: block;
+      height: 100vh;
+    }
+
+    #about-text{
+      margin-top: 40%;
+      margin-left: 15%;
+    }
+
+    #about-text p, #text p{
+      font-family: Segoe UI;
+      font-size: 2em;
+      color: white;
+      text-align: center;
+      background-color: rgba(30, 30, 30, .8);
+      padding: 45px 30px 45px 30px;
+      width: 80%;
+      height: auto;
+    }
+
+  }
+
+  /* Extra Large Screens */
+  @media only screen and (min-width: 1450px) {
+
+    #text{
+      margin-top: 25%;
+    }
+
+    #text p{
+      font-size: 1.5em;
+    }
+
+  }
+
+  /* Responsive */
+  @media only screen and (max-width: 849px) {
+
+    .rowflex{
+      flex-direction: column-reverse;
+    }
+
+    #text{
+      margin-left: 15%;
+      margin-top: 5%;
+    }
+
+    #text p{
+      font-family: Segoe UI;
+      font-size: 1em;
+      color: white;
+      text-align: center;
+      background-color: rgba(30, 30, 30, .6);
+      padding: 45px 30px 45px 30px;
+      width: 80%;
+      height: auto;
+    }
+
+    #about-text{
+      margin-top: 10%;
+      margin-left: 15%;
+    }
+
+    #about-text p{
+      font-family: Segoe UI;
+      font-size: 1em;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      width: 80%;
+      height: auto;
+    }
+
+  }
+  
+</style>

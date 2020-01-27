@@ -35,6 +35,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    z-index: 1;
   }
 
   .columnflex {
@@ -97,6 +98,10 @@
     color: #3d3d3d;
   }
 
+  #myLinks{
+    z-index: 9999;
+  }
+
   #logo{
     height: 80px;
     width: 30px;
@@ -140,30 +145,13 @@
     margin-top: 100px;
   }
 
-
-  /* About Page */
-  #text{
-    margin-left: 15%;
-    margin-top: 15%;
-  }
-
-  #text p{
-    font-family: Segoe UI;
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    background-color: rgba(30, 30, 30, .6);
-    padding: 45px 30px 45px 30px;
-    width: 80%;
-    height: auto;
-  }
-
   /* Navbar on mobile */
   .side-navbar-mobile {
     overflow: hidden;
     background-color: #1e1e1e;
     position: relative;
     display: none;
+    z-index: 9999;
   }
 
   .side-navbar-mobile a {
@@ -192,66 +180,7 @@
     color: white;
   }
 
-  /* Stranica Kontakt */
-  #contact{
-    margin: 8% 8%;
-  }
-
-  #contact form{
-    font-size: 0.9em;
-  }
-
-  #contact label{
-    color: white;
-  }
-
-  #contact input, #contact textarea{
-    padding: 10px;
-    font-size: 0.9em;
-    border: 1px solid #459c75;
-    background-color: rgba(30, 30, 30, .9);
-    color: white;
-  }
-
-  #contact button{
-    width: 100%;
-    margin-top: 5%;
-    padding: 12px 35px;
-    font-size: 0.9em;
-    background-color: #459c75;
-    border: none;
-  }
-
-  #contact button:hover{
-    background-color: #367c5d;
-    cursor: pointer;
-  }
-
-  .form-error{
-    color: red;
-    font-size: 0.9em;
-    padding-top: 5px;
-    font-style: italic;
-  }
-
-  #contact-text{
-    margin-top: 10%;
-    margin-left: 15%;
-  }
-
-  #contact-text p{
-    font-family: Segoe UI;
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    background-color: rgba(30, 30, 30, .6);
-    padding: 45px 30px 45px 30px;
-    width: 80%;
-    height: auto;
-  }
-
-
-  /* Media Queries - For screens wider than 800px (Desktop version) */
+  /* Media Queries - For screens wider than 850px (Desktop version) */
   @media only screen and (min-width: 850px) {
 
     #side-navbar{
@@ -299,126 +228,10 @@
       font-size: 1.1em;
     }
 
-    #text{
-      margin-top: 25%;
-    }
-
-    #text p {
-      font-size: 1.2em;
-    }
-
-    #about-right{
-      background-color: rgba(69, 156, 117, 0.6);
-      display: block;
-      height: 100vh;
-    }
-
-    #contact{
-      margin-top: 30%;
-      margin-right: 15%;
-    }
-
-    #contact form{
-      font-size: 1.1em;
-    }
-
-    #contact label{
-      color: white;
-    }
-
-    #contact input, #contact textarea{
-      font-size: 0.9em;
-      padding: 22px;
-      border: 1px solid #459c75;
-      background-color: rgba(30, 30, 30, .9);
-      color: white;
-    }
-
-    #contact button{
-      margin-left: 35%;
-      width: 30%;
-      padding: 12px 35px;
-      background-color: #459c75;
-      border: none;
-    }
-
-    #contact button:hover{
-      background-color: #367c5d;
-      cursor: pointer;
-    }
-
-    .form-error{
-      color: red;
-      font-size: 0.9em;
-      padding-top: 5px;
-      font-style: italic;
-    }
-
-    #contact-text{
-      margin-top: 40%;
-      margin-left: 15%;
-    }
-
-    #contact-text p{
-      font-family: Segoe UI;
-      font-size: 2em;
-      color: white;
-      text-align: center;
-      background-color: rgba(30, 30, 30, .8);
-      padding: 45px 30px 45px 30px;
-      width: 80%;
-      height: auto;
-    }
-
-    /* Portfolio page */
-    #portfolio{
-      display: flex;
-      justify-content: center;
-    }
-
-    #portfolio-title-block h1{
-      color: white;
-      font-size: 3em;
-      margin-left: 40vw;
-      position: absolute;
-      top: 5vw;
-    }
-
-    #portfolio-box{
-      /*background-color: rgba(69, 156, 117, 0.6);*/
-      display: flex;
-      width: 100%;
-      height: 40vh;
-      margin-top: 30vh;
-      padding: 0 7%;
-    }
-
-    #portfolio-box a{
-      color: white;
-      text-decoration: none;
-      font-size: 1.5em;
-    }
-
-    .slider{
-      width: 100%;
-      color: white;
-    }
-
-    .vueperslides__arrows--outside .vueperslides__arrow--prev{
-      left: -5.5em !important;
-    }
-
-    .vueperslides__arrows--outside .vueperslides__arrow--next{
-      right: -5.5em !important;
-    }
-
-    .vueperslide__title:hover{
-      color: #459c75;
-    }
-
   }
 
   @media only screen and (max-width: 849px) {
+
     #side-navbar{
       display: none;
     }
@@ -426,17 +239,7 @@
     .side-navbar-mobile{
       display: block;
     }
+
   }
-
-  @media only screen and (min-width: 1450px) {
-    #text{
-      margin-top: 25%;
-    }
-
-    #text p{
-      font-size: 1.5em;
-    }
-  }
-
 
 </style>

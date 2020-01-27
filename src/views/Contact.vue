@@ -46,3 +46,67 @@
     })
   }
 </script>
+
+<style scoped>
+  /* Media Queries - For screens wider than 850px (Desktop version) */
+  @media only screen and (min-width: 850px) {
+
+    #about-right{
+      background-color: rgba(69, 156, 117, 0.6);
+      display: block;
+      height: 100vh;
+    }
+
+    #contact{
+      margin-top: 30%;
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    #contact-text{
+      margin-top: 40%;
+      margin-left: 15%;
+    }
+
+    #contact-text p{
+      font-family: Segoe UI;
+      font-size: 2em;
+      color: white;
+      text-align: center;
+      background-color: rgba(30, 30, 30, .8);
+      padding: 45px 30px 45px 30px;
+      width: 80%;
+      height: auto;
+    }
+
+  }
+
+  /* Responsive */
+  @media only screen and (max-width: 849px) {
+
+    .rowflex{
+      flex-direction: column-reverse;
+    }
+
+    #contact{
+      margin: 15% 8% 10% 8%;
+    }
+
+    #contact-text{
+      margin-top: 20%;
+      margin-left: 15%;
+    }
+
+    #contact-text p{
+      font-family: Segoe UI;
+      font-size: 1em;
+      color: white;
+      text-align: center;
+      background-color: rgba(30, 30, 30, .6);
+      padding: 25px 30px 25px 30px;
+      width: 80%;
+      height: auto;
+    }
+
+  }
+</style>

@@ -69,3 +69,88 @@
     }
   } 
 </script>
+
+<style scoped>
+  /* Media Queries - For screens wider than 850px (Desktop version) */
+  @media only screen and (min-width: 850px) {
+
+    #contact form{
+      font-size: 1.1em;
+    }
+
+    #contact label{
+      color: white;
+    }
+
+    #contact input, #contact textarea{
+      font-size: 0.9em;
+      padding: 22px;
+      border: 1px solid #459c75;
+      background-color: rgba(30, 30, 30, .9);
+      color: white;
+    }
+
+    #contact button{
+      margin-left: 35%;
+      width: 30%;
+      padding: 12px 35px;
+      background-color: #459c75;
+      border: none;
+    }
+
+    #contact button:hover{
+      background-color: #367c5d;
+      cursor: pointer;
+    }
+
+    .form-error{
+      color: red;
+      font-size: 0.9em;
+      padding-top: 5px;
+      font-style: italic;
+    }
+
+  }
+
+  /* Responsive */
+  @media only screen and (max-width: 849px){
+
+    #contact form{
+      font-size: 0.9em;
+    }
+
+    #contact label{
+      color: white;
+    }
+
+    #contact input, #contact textarea{
+      padding: 10px;
+      font-size: 0.9em;
+      border: 1px solid #459c75;
+      background-color: rgba(30, 30, 30, .9);
+      color: white;
+    }
+
+    #contact button{
+      width: 100%;
+      margin-top: 5%;
+      padding: 12px 35px;
+      font-size: 0.9em;
+      background-color: #459c75;
+      border: none;
+    }
+
+    #contact button:hover{
+      background-color: #367c5d;
+      cursor: pointer;
+    }
+
+    .form-error{
+      color: red;
+      font-size: 0.9em;
+      padding-top: 5px;
+      font-style: italic;
+    }
+
+  }
+</style>
