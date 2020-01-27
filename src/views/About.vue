@@ -59,8 +59,11 @@
     }
 
     #about-text{
-      margin-top: 40%;
+      margin-top: 42vh;
       margin-left: 15%;
+      text-align: center;
+      justify-content: center;
+
     }
 
     #about-text p, #text p{

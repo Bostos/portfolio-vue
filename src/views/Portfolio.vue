@@ -72,6 +72,7 @@
 </script>
 
 <style scoped>
+
   /* Media Queries - For screens wider than 800px (Desktop version) */
   @media only screen and (min-width: 850px) {
 
@@ -135,6 +136,7 @@
     #portfolio-title-block h1{
       color: white;
       font-size: 1.3em;
+      margin: 10% 0;
     }
 
     #portfolio-box a{

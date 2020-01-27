@@ -20,3 +20,7 @@
 		props: ['title', 'path', 'isActive']
 	}
 </script>
+
+<style scoped>
+	
+</style>
