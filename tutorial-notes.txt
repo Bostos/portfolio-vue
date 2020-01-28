@@ -9,3 +9,6 @@ mongoexport --db=test --collection=traffic --out=C:\Temp\traffic.json
 
 Vueper Slides component for Vue.js:
 https://antoniandre.github.io/vueper-slides/?ref=madewithvuejs.com
+
+Securing Node.js app with JWT:
+https://dev.to/medaymentn/securing-your-node-js-api-with-json-web-token-5o5
