@@ -18,6 +18,23 @@
   	    <div class='columnflex'>
   	    	<div id="contact">
   	    		<ContactForm></ContactForm>
+
+            <form name="contact" method="post" style="display:none;" data-netlify="true">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" name="email" id="email" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" placeholder="Write your message..."></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" id="submit-form">Send</button>
+            </form>
   	    	</div>
   	    </div>
 
