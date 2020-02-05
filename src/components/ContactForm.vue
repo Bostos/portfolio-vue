@@ -1,6 +1,6 @@
 <template>
 
-  <form @submit.prevent="submit" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form @submit.prevent="submit" method="post" action="/success" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
     <span class="form-message"><p v-for="message in formMessages" v-bind:key="message">{{message}}</p></span>
     <div class="form-group">
       <input type="hidden" name="form-name" value="ask-question" />
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-  //import axios from "axios";
+  // import axios from "axios";
 
   export default {
     name: 'ContactForm',
@@ -78,12 +78,28 @@
         }
 
         if (!this.emailErrors.length && !this.messageErrors.length && !this.nameErrors.length) {
+          // this.name = '';
+          // this.email = '';
+          // this.message = '';
 
-          this.name = '';
-          this.email = '';
-          this.message = '';
+          // this.formMessages.push('Thank you for your interest! I will contact you shortly.');
 
-          this.formMessages.push('Thank you for your interest! I will contact you shortly.');
+          fetch('/', {
+            method: 'post',
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: this.encode({
+              "form-name": "contact",
+              ...this.form
+            })
+          })
+          .then(() => {
+            this.$router.push('success')
+          })
+          .catch(() => {
+            this.$router.push('404')
+          })
 
           // axios.post(
           //   "/",
