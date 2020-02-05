@@ -1,7 +1,8 @@
 <template>
-  <form @submit.prevent="submit" method="post" action="" name="contact" netlify>
+  <form @submit.prevent="submit" method="post" action="" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
 
     <div class="form-group">
+      <input type="hidden" name="form-name" value="ask-question" />
       <label for="name">Name</label>
       <input class="form-control" type="text" name="name" id="name" placeholder="Your name" v-model="name">
       <span v-if="nameErrors.length" class="form-error" id="name-error"><p v-for="error in nameErrors" v-bind:key="error">{{error}}</p></span>
@@ -22,9 +23,6 @@
 
 <script>
   import axios from "axios";
-  const axiosConfig = {
-    header: { "Content-Type": "application/x-www-form-urlencoded" }
-  };
 
   export default {
     name: 'ContactForm',
@@ -44,7 +42,19 @@
       }
     },
     methods: {
+      encode (data) {
+        return Object.keys(data)
+          .map(
+            key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          )
+          .join("&");
+      },
       submit: function(e){
+
+        const axiosConfig = {
+          header: { "Content-Type": "application/x-www-form-urlencoded" }
+        };
+
         this.emailErrors = [];
         this.nameErrors = [];
         this.messageErrors = [];
@@ -66,11 +76,11 @@
 
         if (!this.emailErrors.length && !this.messageErrors.length && !this.nameErrors.length) {
           axios.post(
-            "/contact",
-            // this.encode({
-            //   "form-name": "contact",
-            //   ...this.form
-            // }),
+            "/",
+            this.encode({
+              "form-name": "contact",
+              ...this.form
+            }),
             axiosConfig
           )
           .then(() => {
