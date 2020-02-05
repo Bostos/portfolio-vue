@@ -5,17 +5,17 @@
     <div class="form-group">
       <input type="hidden" name="bot-field"/>
       <label for="name">Name</label>
-      <input class="form-control" type="text" name="name" id="name" placeholder="Your name" v-model="name">
+      <input class="form-control" type="text" name="name" id="name" placeholder="Your name" v-model="form.name">
       <span v-if="nameErrors.length" class="form-error" id="name-error"><p v-for="error in nameErrors" v-bind:key="error">{{error}}</p></span>
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input class="form-control" type="text" name="email" id="email" placeholder="Your email" v-model="email">
+      <input class="form-control" type="text" name="email" id="email" placeholder="Your email" v-model="form.email">
       <span v-if="emailErrors.length" class="form-error" id="email-error"><p v-for="error in emailErrors" v-bind:key="error">{{error}}</p></span>
     </div>
     <div class="form-group">
       <label for="message">Message</label>
-      <textarea class="form-control" name="message" id="message" placeholder="Write your message..." v-model="message"></textarea>
+      <textarea class="form-control" name="message" id="message" placeholder="Write your message..." v-model="form.message"></textarea>
       <span v-if="messageErrors.length" class="form-error" id="message-error"><p v-for="error in messageErrors" v-bind:key="error">{{error}}</p></span>
     </div>
     <button class="btn btn-primary" type="submit" id="submit-form">Send</button>
@@ -64,20 +64,21 @@
         this.messageErrors = [];
         this.formMessages = [];
 
-        if(!this.name){
+        if(!this.form.name){
           this.nameErrors.push("Please enter your name")
         }
 
-        if(!this.message){
+        if(!this.form.message){
           this.messageErrors.push("Please enter your message")
         }
 
-        if (!this.email) {
+        if (!this.form.email) {
           this.emailErrors.push('Please enter your email');
         }
-        else if (!this.validEmail(this.email)) {
+        else if (!this.validEmail(this.form.email)) {
           this.emailErrors.push('Please enter valid email format.');
         }
+
 
         if (!this.emailErrors.length && !this.messageErrors.length && !this.nameErrors.length) {
           // this.name = '';
