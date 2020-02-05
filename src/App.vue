@@ -57,7 +57,7 @@
   }
 
   #hello-text{
-    margin-top: 30%;
+    margin-top: 25%;
     font-size: 0.7em;
     z-index: 999;
   }
@@ -100,6 +100,7 @@
 
   #myLinks{
     z-index: 9999;
+    text-align: center;
   }
 
   #logo{

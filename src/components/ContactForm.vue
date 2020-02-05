@@ -98,9 +98,9 @@
             })
           })
           .then(() => {
-            this.name = '';
-            this.email = '';
-            this.message = '';
+            this.form.name = '';
+            this.form.email = '';
+            this.form.message = '';
             this.formMessages.push('Thank you for your interest! I will contact you shortly.');
             //this.$router.push('success')
           })

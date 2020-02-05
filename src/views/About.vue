@@ -2,7 +2,7 @@
   <div id="content">
 
   	  <div class="side-navbar-mobile">
-        <router-link to="/about" active-class="active-mobile" exact><img style="width: 4%;" src="../assets/img/logo-white.png" alt="bostos web logo"><span style="margin-left: 33%;">About</span></router-link>
+        <router-link to="/" active-class="active-mobile"><img style="width: 4%;" src="../assets/img/logo-white.png" alt="logo"><span style="margin-left: 33%;">About</span></router-link>
         <div id="myLinks" v-if="mobileNavVisible">
             <router-link to="/">Home</router-link>
             <router-link to="/portfolio">Portfolio</router-link>
