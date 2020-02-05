@@ -30,7 +30,9 @@
     data() {
       return {
         form: {
-          contact: ""
+          name: '',
+          email: '',
+          message: ''
         },
         isSubmitted: false,
         isError: false,
