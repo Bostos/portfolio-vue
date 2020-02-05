@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submit" method="post" action="" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form @submit.prevent="submit" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
 
     <div class="form-group">
       <input type="hidden" name="form-name" value="ask-question" />
