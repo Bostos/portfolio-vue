@@ -1,6 +1,7 @@
 <template>
-  <form @submit.prevent="submit" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
 
+  <form @submit.prevent="submit" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+    <span class="form-message"><p v-for="message in formMessages" v-bind:key="message">{{message}}</p></span>
     <div class="form-group">
       <input type="hidden" name="form-name" value="ask-question" />
       <label for="name">Name</label>
@@ -22,7 +23,7 @@
 </template>
 
 <script>
-  import axios from "axios";
+  //import axios from "axios";
 
   export default {
     name: 'ContactForm',
@@ -36,6 +37,7 @@
         emailErrors: [],
         nameErrors: [],
         messageErrors: [],
+        formMessages: [],
         name: '',
         email: '',
         message: '',
@@ -51,13 +53,14 @@
       },
       submit: function(e){
 
-        const axiosConfig = {
-          header: { "Content-Type": "application/x-www-form-urlencoded" }
-        };
+        // const axiosConfig = {
+        //   header: { "Content-Type": "application/x-www-form-urlencoded" }
+        // };
 
         this.emailErrors = [];
         this.nameErrors = [];
         this.messageErrors = [];
+        this.formMessages = [];
 
         if(!this.name){
           this.nameErrors.push("Please enter your name")
@@ -75,21 +78,28 @@
         }
 
         if (!this.emailErrors.length && !this.messageErrors.length && !this.nameErrors.length) {
-          axios.post(
-            "/",
-            this.encode({
-              "form-name": "contact",
-              ...this.form
-            }),
-            axiosConfig
-          )
-          .then(() => {
-            this.$router.push('success')
-          })
-          .catch(() => {
-            this.$router.push('404')
-          })
-          //return true;
+
+          this.name = '';
+          this.email = '';
+          this.message = '';
+
+          this.formMessages.push('Thank you for your interest! I will contact you shortly.');
+
+          // axios.post(
+          //   "/",
+          //   this.encode({
+          //     "form-name": "contact",
+          //     ...this.form
+          //   }),
+          //   axiosConfig
+          // )
+          // .then(() => {
+          //   this.$router.push('success')
+          // })
+          // .catch(() => {
+          //   this.$router.push('404')
+          // })
+          
         }
 
         e.preventDefault();
@@ -142,6 +152,12 @@
       font-style: italic;
     }
 
+    .form-message{
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
   }
 
   /* Responsive */
@@ -182,6 +198,12 @@
       font-size: 0.9em;
       padding-top: 5px;
       font-style: italic;
+    }
+
+    .form-message{
+      color: white;
+      text-align: center;
+      font-size: 16px;
     }
 
   }
