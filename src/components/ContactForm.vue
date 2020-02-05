@@ -27,8 +27,8 @@
 
   export default {
     name: 'ContactForm',
-    data() {
-      return {
+    data: () => ({
+      /*return {*/
         form: {
           name: '',
           email: '',
@@ -40,11 +40,11 @@
         nameErrors: [],
         messageErrors: [],
         formMessages: [],
-        name: '',
+        /*name: '',
         email: '',
-        message: '',
-      }
-    },
+        message: '',*/
+      /*}*/
+    }),
     methods: {
       encode (data) {
         return Object.keys(data)
