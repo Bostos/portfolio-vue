@@ -56,10 +56,10 @@
       data() {
         return {
           projects: [
-            { _id: 1, title: 'FC Partizan', link: 'test1', image: 'test-image.jpg', description: 'test description' },
+            { _id: 1, title: 'FC Partizan', link: 'http://fcpartizan.000webhostapp.com/', image: 'fc-partizan.jpg', description: 'Football club presentation' },
             { _id: 2, title: 'TV Noir', link: 'test2', image: 'test-image-2.jpg', description: 'test description' },
             { _id: 3, title: 'Test', link: 'test3', image: 'test-image-3.jpg', description: 'test description' },
-            { _id: 4, title: 'Test', link: 'test4', image: 'test-image-4.jpg', description: 'test description' },
+            { _id: 4, title: 'Visit vis', link: 'https://www.visitvis.hr/', image: 'visit-vis.jpg', description: 'Tourist organisation' },
           ]
         }
       },
