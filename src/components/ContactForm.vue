@@ -1,9 +1,9 @@
 <template>
 
-  <form @submit.prevent="submit" method="post" action="/success" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form @submit.prevent="submit" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
     <span class="form-message"><p v-for="message in formMessages" v-bind:key="message">{{message}}</p></span>
     <div class="form-group">
-      <input type="hidden" name="form-name" value="ask-question" />
+      <input type="hidden" name="bot-field"/>
       <label for="name">Name</label>
       <input class="form-control" type="text" name="name" id="name" placeholder="Your name" v-model="name">
       <span v-if="nameErrors.length" class="form-error" id="name-error"><p v-for="error in nameErrors" v-bind:key="error">{{error}}</p></span>
@@ -95,26 +95,15 @@
             })
           })
           .then(() => {
-            this.$router.push('success')
+            this.name = '';
+            this.email = '';
+            this.message = '';
+            this.formMessages.push('Thank you for your interest! I will contact you shortly.');
+            //this.$router.push('success')
           })
           .catch(() => {
             this.$router.push('404')
           })
-
-          // axios.post(
-          //   "/",
-          //   this.encode({
-          //     "form-name": "contact",
-          //     ...this.form
-          //   }),
-          //   axiosConfig
-          // )
-          // .then(() => {
-          //   this.$router.push('success')
-          // })
-          // .catch(() => {
-          //   this.$router.push('404')
-          // })
           
         }
 
