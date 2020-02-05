@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submit" method="post" action="" netlify>
+  <form @submit.prevent="submit" method="post" action="" name="contact" netlify>
 
     <div class="form-group">
       <label for="name">Name</label>
@@ -21,10 +21,18 @@
 </template>
 
 <script>
+  import axios from "axios";
+  const axiosConfig = {
+    header: { "Content-Type": "application/x-www-form-urlencoded" }
+  };
+
   export default {
     name: 'ContactForm',
     data() {
       return {
+        form: {
+          contact: ""
+        },
         isSubmitted: false,
         isError: false,
         emailErrors: [],
@@ -57,7 +65,21 @@
         }
 
         if (!this.emailErrors.length && !this.messageErrors.length && !this.nameErrors.length) {
-          return true;
+          axios.post(
+            "/contact",
+            // this.encode({
+            //   "form-name": "contact",
+            //   ...this.form
+            // }),
+            axiosConfig
+          )
+          .then(() => {
+            this.$router.push('success')
+          })
+          .catch(() => {
+            this.$router.push('404')
+          })
+          //return true;
         }
 
         e.preventDefault();

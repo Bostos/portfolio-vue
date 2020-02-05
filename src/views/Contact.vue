@@ -21,7 +21,7 @@
 
             <p id="email-link">Not fond of contact forms? <a href="mailto:nikola.stamenkovski.web@gmail.com">Send me</a> an email.</p>
 
-            <form name="contact" method="post" style="display:none;" netlify>
+            <form name="contact" method="post" style="display:none;" netlify netlify-honeypot="bot-field" hidden>
 
               <div class="form-group">
                 <label for="name">Name</label>
