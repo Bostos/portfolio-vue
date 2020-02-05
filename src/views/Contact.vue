@@ -19,6 +19,8 @@
   	    	<div id="contact">
   	    		<ContactForm></ContactForm>
 
+            <p id="email-link">Not fond of contact forms? <a href="mailto:nikola.stamenkovski.web@gmail.com">Send me</a> an email.</p>
+
             <form name="contact" method="post" style="display:none;" data-netlify="true">
 
               <div class="form-group">
@@ -96,6 +98,19 @@
       height: auto;
     }
 
+    #email-link{
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10%;
+    }
+
+    #email-link a{
+      text-decoration: none;
+      font-weight: bold;
+      color: #459c75;
+    }
+
   }
 
   /* Responsive */
@@ -106,11 +121,11 @@
     }
 
     #contact{
-      margin: 15% 8% 10% 8%;
+      margin: 10% 8% 10% 8%;
     }
 
     #contact-text{
-      margin-top: 20%;
+      margin-top: 15%;
       margin-left: 15%;
     }
 
@@ -123,6 +138,19 @@
       padding: 25px 30px 25px 30px;
       width: 80%;
       height: auto;
+    }
+
+    #email-link{
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 8%;
+    }
+
+    #email-link a{
+      text-decoration: none;
+      font-weight: bold;
+      color: #459c75;
     }
 
   }

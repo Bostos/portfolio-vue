@@ -124,7 +124,7 @@
   #content{
     background-color: #000;
     background-image: url("assets/img/dots-background.png");
-    height: 100vh;
+    min-height: 100vh;
     flex: 1;
   }
 

@@ -16,8 +16,10 @@
   	<div class='rowflex'>
   	    <div class='columnflex'>
   	    	<div id="text">
-  	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br><br>
-  	    		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+  	    		<p>I am a professional full stack web developer with more than 3 years of experience.<br><br>
+              I have a diverse set of skills, ranging from web design with HTML + CSS + JavaScript, using frontend frameworks such as Vue.JS all the way to backend technologies such as PHP, MySQL, MongoDB, Laravel framework and Node.JS.<br><br>
+              I have done several projects such as web applications for tourist and rent-a-car agencies, restaurants and other business organizations.
+            </p>
   	    	</div>
   	    </div>
   	    <div class="columnflex">

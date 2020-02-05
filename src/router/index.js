@@ -26,6 +26,10 @@ const routes = [
     component: () => import('../views/Contact.vue')
   },
   {
+    path: '/contact-me',
+    redirect: '/contact'
+  },
+  {
     path: '/portfolio/:id',
     name: 'project',
     component: () => import('../views/Project.vue')
