@@ -12,3 +12,12 @@ https://antoniandre.github.io/vueper-slides/?ref=madewithvuejs.com
 
 Securing Node.js app with JWT:
 https://dev.to/medaymentn/securing-your-node-js-api-with-json-web-token-5o5
+
+https://portfolioservervue.herokuapp.com/
+https://bostos.herokuapp.com/
+
+heroku ps:scale web=1 --app bostos    // command for adding 1web (dyno) to start heroku app
+https://www.youtube.com/watch?v=W-b9KGwVECs
+
+
+- projects block on click display block over image with used technologies for that project (add a link later)
