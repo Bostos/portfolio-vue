@@ -15,7 +15,7 @@ export const sitemapMiddleware = () => {
       ],
     };
 
-    new VueRouterSitemap(router).filterPaths(filterConfig).build('http://example.com').save(staticSitemap);
+    new VueRouterSitemap(VueRouter).filterPaths(filterConfig).build('https://nikolastamenkovski.netlify.com').save(staticSitemap);
 
     return res.sendFile(staticSitemap);
   };
