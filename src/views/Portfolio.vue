@@ -94,7 +94,20 @@
               ],
               isHidden: true
             },
-            { _id: 3,
+            {
+              _id: 3,
+              title: 'Visit vis',
+              link: 'https://www.visitvis.hr/',
+              image: 'visit-vis.jpg',
+              description: 'Tourist organisation',
+              technologies: [
+                {id: 1, name: 'PHP'},
+                {id: 2, name: 'JavaScript'},
+                {id: 3, name: 'HTML/CSS'}
+              ],
+              isHidden: true
+            },
+            { _id: 4,
               title: 'LTC Systems',
               link: 'https://www.ltc-systems.com/',
               image: 'ltc-systems.jpg',
@@ -106,19 +119,6 @@
               ],
               isHidden: true
             },
-            {
-              _id: 4,
-              title: 'Visit vis',
-              link: 'https://www.visitvis.hr/',
-              image: 'visit-vis.jpg',
-              description: 'Tourist organisation',
-              technologies: [
-                {id: 1, name: 'PHP'},
-                {id: 2, name: 'JavaScript'},
-                {id: 3, name: 'HTML/CSS'}
-              ],
-              isHidden: true
-            }
           ],
         }
       },
