@@ -24,7 +24,7 @@
 	    </div>
 	    <div class='columnflex'>
 	    	<div id="profile">
-	    		<img id="my-img" src="../assets/img/nikola-stamenkovski.jpg" alt="Nikola Stamenkovski">
+	    		<img id="my-img" src="../assets/img/profile.png" alt="Nikola Stamenkovski">
 	    	</div>
 	    </div>
 	  </div>
