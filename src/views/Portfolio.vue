@@ -95,10 +95,10 @@
               isHidden: true
             },
             { _id: 3,
-              title: 'Test3',
-              link: 'test3',
-              image: 'test-image-3.jpg',
-              description: 'test description',
+              title: 'LTC Systems',
+              link: 'https://www.ltc-systems.com/',
+              image: 'ltc-systems.jpg',
+              description: 'Forklifts Company Portfolio',
               technologies: [
                 {id: 1, name: 'PHP'},
                 {id: 2, name: 'JavaScript'},
