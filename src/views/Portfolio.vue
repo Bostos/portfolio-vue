@@ -83,8 +83,8 @@
             },
             { _id: 2,
               title: 'TV Noir',
-              link: 'test2',
-              image: 'test-image-2.jpg',
+              link: '',
+              image: 'tvnoir.jpg',
               description: 'TV Series Blog & Database',
               technologies: [
                 {id: 1, name: 'Laravel'},
