@@ -46,12 +46,19 @@
   @media only screen and (min-width: 850px) {
 
     #text{
-      margin-top: 25%;
+      margin-top: 15%;
       margin-left: 15%;
     }
 
     #text p {
       font-size: 1.2em;
+      font-family: Segoe UI;
+      color: white;
+      text-align: center;
+      background-color: rgba(30, 30, 30, .8);
+      padding: 45px 30px 45px 30px;
+      width: 80%;
+      height: auto;
     }
 
     #about-right{
@@ -68,7 +75,7 @@
 
     }
 
-    #about-text p, #text p{
+    #about-text p{
       font-family: Segoe UI;
       font-size: 2em;
       color: white;
@@ -81,11 +88,13 @@
 
   }
 
+
+
   /* Extra Large Screens */
   @media only screen and (min-width: 1450px) {
 
     #text{
-      margin-top: 25%;
+      margin-top: 20vh;
     }
 
     #text p{
