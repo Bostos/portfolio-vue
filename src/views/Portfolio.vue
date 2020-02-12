@@ -83,8 +83,8 @@
             },
             { _id: 2,
               title: 'TV Noir',
-              link: 'test2',
-              image: 'test-image-2.jpg',
+              link: '',
+              image: 'tvnoir.jpg',
               description: 'TV Series Blog & Database',
               technologies: [
                 {id: 1, name: 'Laravel'},
@@ -94,20 +94,8 @@
               ],
               isHidden: true
             },
-            { _id: 3,
-              title: 'Test3',
-              link: 'test3',
-              image: 'test-image-3.jpg',
-              description: 'test description',
-              technologies: [
-                {id: 1, name: 'PHP'},
-                {id: 2, name: 'JavaScript'},
-                {id: 3, name: 'HTML/CSS'}
-              ],
-              isHidden: true
-            },
             {
-              _id: 4,
+              _id: 3,
               title: 'Visit vis',
               link: 'https://www.visitvis.hr/',
               image: 'visit-vis.jpg',
@@ -118,7 +106,19 @@
                 {id: 3, name: 'HTML/CSS'}
               ],
               isHidden: true
-            }
+            },
+            { _id: 4,
+              title: 'LTC Systems',
+              link: 'https://www.ltc-systems.com/',
+              image: 'ltc-systems.jpg',
+              description: 'Forklifts Company Portfolio',
+              technologies: [
+                {id: 1, name: 'PHP'},
+                {id: 2, name: 'JavaScript'},
+                {id: 3, name: 'HTML/CSS'}
+              ],
+              isHidden: true
+            },
           ],
         }
       },
