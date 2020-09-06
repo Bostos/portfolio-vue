@@ -96,10 +96,10 @@
             },
             {
               _id: 3,
-              title: 'Visit vis',
-              link: 'https://www.visitvis.hr/',
-              image: 'visit-vis.jpg',
-              description: 'Tourist organisation',
+              title: 'Fahrschule Drive-in',
+              link: 'https://www.fahrschule-drivein.ch/',
+              image: 'fahrschule.jpg',
+              description: 'Driving school presentation',
               technologies: [
                 {id: 1, name: 'PHP'},
                 {id: 2, name: 'JavaScript'},
@@ -107,7 +107,20 @@
               ],
               isHidden: true
             },
-            { _id: 4,
+            { 
+              _id: 4,
+              title: 'Auto servis Beograd',
+              link: 'https://auto-servisbeograd.rs/',
+              image: 'autoservis.png',
+              description: 'Car service presentation',
+              technologies: [
+                {id: 1, name: 'PHP'},
+                {id: 2, name: 'JavaScript'},
+                {id: 3, name: 'HTML/CSS'}
+              ],
+              isHidden: true
+            },
+            { _id: 5,
               title: 'LTC Systems',
               link: 'https://www.ltc-systems.com/',
               image: 'ltc-systems.jpg',
